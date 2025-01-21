@@ -6,6 +6,7 @@ import { products } from '../../data/products';
 import { stores } from '../../data/stores';
 import './InventoryList.css';
 import { useTranslation } from 'react-i18next';
+import { exportToCSV } from '../../utils/csvExport';
 
 export const InventoryList: React.FC = () => {
   const [inventories, setInventories] = useState<Inventory[]>([]);
@@ -35,6 +36,11 @@ export const InventoryList: React.FC = () => {
     return Object.values(stock).reduce((sum, quantity) => sum + quantity, 0);
   };
 
+
+  const handleExportCSV = () => {
+    exportToCSV(inventories, products, stores);
+  };
+
   if (inventories.length === 0) {
     return (
       <div className="inventory-list empty">
@@ -48,7 +54,7 @@ export const InventoryList: React.FC = () => {
     <div className="inventory-list">
       <div className="inventory-header">
         <h2>{t('common.inventory_list')}</h2>
-        <button className="export-button">
+        <button onClick={handleExportCSV} className="export-button">
           {t('common.export_to_csv')}
         </button>
       </div>
