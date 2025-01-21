@@ -1,0 +1,18 @@
+{
+  "welcome": "Inventory Management",
+  "language": "Language",
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "inventory_list": "Inventory List",
+    "add_inventory": "Add Inventory",
+    "no_inventory_records": "No Inventory Records",
+    "start_by_adding_some_inventory_records": "Start by adding some inventory records using the form.",
+    "export_to_csv": "Export to CSV",
+    "product": "Product",
+    "select": "Select",
+    "store_stock_levels": "Store Stock Levels"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "welcome": "Gestion des stocks",
+  "language": "Langue",
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "inventory_list": "Liste des stocks",
+    "add_inventory": "Ajouter un article",
+    "no_inventory_records": "Aucun enregistrement",
+    "start_by_adding_some_inventory_records": "Commencez par ajouter des articles en utilisant le formulaire.",
+    "export_to_csv": "Exporter en CSV",
+    "product": "Produit",
+    "select": "Sélectionner",
+    "store_stock_levels": "Niveaux de stock par magasin"
+  }
+}
